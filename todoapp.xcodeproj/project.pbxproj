@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5F23D2ED2E68886F001018F9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5F23D2EC2E68886F001018F9 /* FirebaseAuth */; };
+		5F23D2EF2E68886F001018F9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5F23D2EE2E68886F001018F9 /* FirebaseFirestore */; };
+		5F91A3552E72F1C10013E2B5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5F91A3542E72F1C10013E2B5 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5F280E202E685937003EEB6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F23D2ED2E68886F001018F9 /* FirebaseAuth in Frameworks */,
+				5F23D2EF2E68886F001018F9 /* FirebaseFirestore in Frameworks */,
+				5F91A3552E72F1C10013E2B5 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = todoapp;
 			packageProductDependencies = (
+				5F23D2EC2E68886F001018F9 /* FirebaseAuth */,
+				5F23D2EE2E68886F001018F9 /* FirebaseFirestore */,
+				5F91A3542E72F1C10013E2B5 /* FirebaseStorage */,
 			);
 			productName = todoapp;
 			productReference = 5F280E122E685935003EEB6F /* todoapp.app */;
@@ -195,6 +207,9 @@
 			);
 			mainGroup = 5F280E092E685935003EEB6F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5F23D2EB2E68886F001018F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5F280E132E685935003EEB6F /* Products */;
 			projectDirPath = "";
@@ -397,11 +412,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TodoApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,11 +439,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TodoApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,6 +565,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F23D2EB2E68886F001018F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F23D2EC2E68886F001018F9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F23D2EB2E68886F001018F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5F23D2EE2E68886F001018F9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F23D2EB2E68886F001018F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5F91A3542E72F1C10013E2B5 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F23D2EB2E68886F001018F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F280E0A2E685935003EEB6F /* Project object */;
 }
