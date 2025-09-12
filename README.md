@@ -7,7 +7,7 @@ It may look simple, but it represents my **first step into mobile app developmen
 This project is my small step into **mobile app development**.  
 The app allows:
 
-- Registering and logging UI with in with Firebase  
+- Registering and logging UI within Firebase  
 - Adding new tasks  
 - Marking tasks as completed 
 - Deleting tasks that are no longer needed  
